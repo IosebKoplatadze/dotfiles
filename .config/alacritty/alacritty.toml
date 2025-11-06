@@ -1,0 +1,83 @@
+# Alacritty Terminal Configuration
+# https://alacritty.org/config-alacritty.html
+
+[window]
+opacity = 0.95
+padding = { x = 10, y = 10 }
+decorations = "full"
+startup_mode = "Windowed"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrains Mono"
+style = "Bold Italic"
+
+[colors.primary]
+background = "#1e1e1e"
+foreground = "#d4d4d4"
+
+[colors.cursor]
+text = "#1e1e1e"
+cursor = "#d4d4d4"
+
+[colors.normal]
+black = "#1e1e1e"
+red = "#f48771"
+green = "#a9dc76"
+yellow = "#ffd866"
+blue = "#78dce8"
+magenta = "#ab9df2"
+cyan = "#85dacc"
+white = "#d4d4d4"
+
+[colors.bright]
+black = "#727072"
+red = "#f48771"
+green = "#a9dc76"
+yellow = "#ffd866"
+blue = "#78dce8"
+magenta = "#ab9df2"
+cyan = "#85dacc"
+white = "#fcfcfa"
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_interval = 750
+
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+
+[selection]
+save_to_clipboard = true
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+    { key = "V", mods = "Control|Shift", action = "Paste" },
+    { key = "C", mods = "Control|Shift", action = "Copy" },
+    { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
+    { key = "Plus", mods = "Control", action = "IncreaseFontSize" },
+    { key = "Minus", mods = "Control", action = "DecreaseFontSize" },
+    { key = "Key0", mods = "Control", action = "ResetFontSize" },
+]

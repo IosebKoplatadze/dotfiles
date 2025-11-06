@@ -1,0 +1,67 @@
+[user]
+	name = Ioseb Koplatadze
+	email = your-email@example.com
+
+[core]
+	editor = vim
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+	pager = less -FRX
+
+[color]
+	ui = auto
+	branch = auto
+	diff = auto
+	status = auto
+
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	last = log -1 HEAD
+	unstage = reset HEAD --
+	amend = commit --amend
+	graph = log --graph --oneline --decorate --all
+	alias = config --get-regexp alias
+
+[push]
+	default = simple
+	autoSetupRemote = true
+
+[pull]
+	rebase = false
+
+[init]
+	defaultBranch = main
+
+[diff]
+	tool = vimdiff
+
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+
+[fetch]
+	prune = true
+
+[rebase]
+	autoStash = true
