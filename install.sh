@@ -65,6 +65,7 @@ echo -e "\n${YELLOW}Checking for oh-my-zsh...${NC}"
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo -e "${YELLOW}oh-my-zsh is not installed.${NC}"
     echo -e "${YELLOW}Would you like to install it? (y/n)${NC}"
+    echo -e "${RED}WARNING: This will download and execute a script from the internet.${NC}"
     read -r response
     if [[ "$response" =~ ^[Yy]$ ]]; then
         echo -e "${GREEN}Installing oh-my-zsh...${NC}"

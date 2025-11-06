@@ -87,7 +87,7 @@ fi
 # Load custom configurations from .zsh directory if it exists
 if [[ -d "$HOME/.zsh" ]]; then
     for config_file in $HOME/.zsh/*.zsh; do
-        source $config_file
+        [[ -f "$config_file" ]] && source "$config_file"
     done
 fi
 
