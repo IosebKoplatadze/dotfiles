@@ -1,0 +1,114 @@
+# Ghostty Configuration with Catppuccin Mocha Theme
+# Place this file in: ~/.config/ghostty/config
+
+# Shell configuration
+command = /opt/homebrew/bin/nu
+
+# Font configuration
+font-family = JetBrainsMono Nerd Font
+font-size = 14
+font-style = Regular
+font-style-bold = Bold
+font-style-italic = Italic
+font-style-bold-italic = Bold Italic
+
+# Font features
+font-feature = -calt
+font-feature = -liga
+
+# Cursor
+cursor-style = block
+cursor-style-blink = true
+cursor-invert-fg-bg = true
+
+# Mouse
+mouse-hide-while-typing = true
+copy-on-select = true
+
+# Window
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+window-padding-color = background
+
+# Window decorations (true, false)
+window-decoration = true
+
+# Window opacity
+background-opacity = 0.95
+background-blur-radius = 20
+
+# Confirm before closing
+confirm-close-surface = false
+
+# Shell integration
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# Catppuccin Mocha Color Palette
+palette = 0=#45475a
+palette = 1=#f38ba8
+palette = 2=#a6e3a1
+palette = 3=#f9e2af
+palette = 4=#89b4fa
+palette = 5=#f5c2e7
+palette = 6=#94e2d5
+palette = 7=#bac2de
+palette = 8=#585b70
+palette = 9=#f38ba8
+palette = 10=#a6e3a1
+palette = 11=#f9e2af
+palette = 12=#89b4fa
+palette = 13=#f5c2e7
+palette = 14=#94e2d5
+palette = 15=#a6adc8
+
+# Background and foreground
+background = #1e1e2e
+foreground = #cdd6f4
+
+# Cursor colors
+cursor-color = #f5e0dc
+cursor-text = #1e1e2e
+
+# Selection colors
+selection-background = #f5e0dc
+selection-foreground = #1e1e2e
+
+# Tab bar (if using)
+window-theme = dark
+
+# Scrollback
+scrollback-limit = 10000
+
+# Clipboard
+clipboard-read = allow
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
+
+# Advanced
+term = xterm-256color
+
+# Keybindings
+# Copy/Paste
+keybind = super+c=copy_to_clipboard
+keybind = super+v=paste_from_clipboard
+
+# Font size
+keybind = super+plus=increase_font_size:1
+keybind = super+minus=decrease_font_size:1
+keybind = super+0=reset_font_size
+
+# New window/tab
+keybind = super+n=new_window
+keybind = super+t=new_tab
+
+# Close window
+keybind = super+w=close_surface
+keybind = super+q=quit
+
+# Performance
+quick-terminal-animation-duration = 0.2
+
+# Mouse bindings
+mouse-scroll-multiplier = 3
