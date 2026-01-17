@@ -1,4 +1,4 @@
-# Alacritty Configuration with Catppuccin Mocha Theme
+# Alacritty Configuration with Tbilisi Night Storm Theme
 # Place this file in: ~/.config/alacritty/alacritty.toml
 
 # # [terminal.shell]
@@ -6,7 +6,7 @@
 # # args = []
 
 general.import = [
-  "~/.config/alacritty/monokai-pro.toml"
+  "~/.config/alacritty/tbilisi-night-storm.toml"
 ]
 
 [env]
