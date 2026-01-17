@@ -6,7 +6,7 @@
 # # args = []
 
 general.import = [
-  "~/.config/alacritty/catppuccin-mocha.toml"
+  "~/.config/alacritty/monokai-pro.toml"
 ]
 
 [env]

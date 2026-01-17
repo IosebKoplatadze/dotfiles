@@ -19,6 +19,7 @@ My personal dotfiles for macOS development environment.
 - **Editor & Terminal**
   - `.tmux.conf` - tmux configuration
   - `.viminfo` - Vim session information
+  - `.config/nvim/` - Neovim (LazyVim) configuration with Monokai Pro theme
   - `.config/alacritty/` - Alacritty terminal emulator configuration
   - `.config/ghostty/` - Ghostty terminal emulator configuration
   - `.config/helix/` - Helix editor configuration
@@ -35,7 +36,7 @@ git clone https://github.com/IosebKoplatadze/dotfiles.git ~/dotfiles
 2. Backup your existing dotfiles (optional but recommended):
 ```bash
 mkdir ~/dotfiles_backup
-cp ~/.zshrc ~/.zshenv ~/.p10k.zsh ~/.profile ~/.gitconfig ~/.npmrc ~/.ripgreprc ~/.tmux.conf ~/.viminfo ~/dotfiles_backup/ 2>/dev/null
+cp ~/.zshrc ~/.zshenv ~/.p10k.zsh ~/.profile ~/.bash_history ~/.gitconfig ~/.npmrc ~/.ripgreprc ~/.tmux.conf ~/.viminfo ~/dotfiles_backup/ 2>/dev/null
 ```
 
 3. Create symbolic links:
@@ -49,6 +50,7 @@ ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.npmrc ~/.npmrc
 ln -sf ~/dotfiles/.ripgreprc ~/.ripgreprc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
 ln -sf ~/dotfiles/.config/alacritty ~/.config/alacritty
 ln -sf ~/dotfiles/.config/ghostty ~/.config/ghostty
 ln -sf ~/dotfiles/.config/helix ~/.config/helix
